@@ -4,6 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
     color: white;
+    margin: 0;
 }
 .Big{
     background: url(imgs/ori.jpg)  no-repeat center fixed;
@@ -17,11 +18,13 @@ body{
   flex-direction: row;
 }
 .Designer{
+    margin-top: 30px;
+    margin-left: 50px;
     display: flex;
     
 }
 .Designer>img{
-    margin: 20px;
+    margin-top: 20px;
     margin-right: 10px;
     width: 30px;
     height: 30px;
@@ -40,15 +43,13 @@ body{
     transition: ease-in 3s;
     font-size: 120px;
     left: 50px;
-    height: 40%;
     width: 80%;
     padding: 0;
     line-height: 120px;
     font-family: 'Anton', sans-serif;
     color: white;
-    margin-top: 40vh;
+    margin-top: 38vh;
     margin-left: 50px;
-    opacity: 0.9;
 }
 .BigText:hover{
     font-size: 130px;
@@ -57,24 +58,51 @@ body{
     flex: 40%;
     color: white;
     font-family: 'Tulpen One', cursive;
-    font-size: 26px;  
+    font-size: 26px; 
+    margin-right: 0px; 
 }
 button{
     background-color: black ; 
     color: white; 
     border: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
 }
 .Buttons{
-  margin-top: 10px;
+  margin-top: 40px;
   margin-left: 80px;
 }
 .JustText{
-    margin-top: 50vh;
-    width: 300px;
-    margin-left: 60px;
-    margin-right: 100px;
+    display: flex;
+    float: right;
+    margin-top: 40vh;
+    width: 80%;
+    margin-right: 50px;
+    align-content: center;
     text-align: justify;
+}
+@media only screen and (max-width:1300px) {
+    .Buttons{
+        margin-left: 20px;
+    }
+    .BigText{
+        margin-top: 38vh;
+    }
+}
+@media only screen and (max-width:1120px) {
+    .BigText{
+        margin-top: 35vh;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .Buttons{
+        margin-left: 10px;
+    }
+    button{
+        font-size: 10px;
+    }
+    .BigText{
+        margin-top: 38vh;
+    }
 }
